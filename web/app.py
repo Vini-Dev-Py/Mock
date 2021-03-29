@@ -13,6 +13,14 @@ class Users(Resource):
 
             return json.load(J)
 
+class Members(Resource):
+
+    def get(self):
+
+        with open('members.json', 'r', encoding='utf8') as J:
+
+            return json.load(J)
+
 class Permissions(Resource):
 
     def get(self):
@@ -38,6 +46,7 @@ class Services(Resource):
             return json.load(J)
 
 api.add_resource(Users, "/users")
+api.add_resource(Members, "/members")
 api.add_resource(Permissions, "/permissions")
 api.add_resource(Roles, "/roles")
 api.add_resource(Services, "/services")

@@ -1,14 +1,14 @@
 [
     {
-        "id": "user",
-        "description": "so pode visualizar as coisas dele mesmo"
+        "id": "admin",
+        "desc": "administradores de usuários, podem ver e manipular qualquer usuário."
     },
     {
-        "id": "admin",
-        "description": "so pode visualizar e alterar as coisas da role de usuarios"
+        "id": "user",
+        "desc": "usuários, podem apenas editar as próprias informações"
     },
     {
         "id": "root",
-        "description": "pode tudo"
+        "desc": "root, podem tudo menos modificar outros roots"
     }
 ]

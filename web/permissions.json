@@ -1,33 +1,16 @@
 [
     {
-        "id": "1",
-
-        "permissions": "wr",
-        "parent_type": "roles",
-        "parent": "admin",
-
-        "child_type": "roles",
-        "child": "user"
+        "id": 1,
+        "level": "rw",
+        "parent_id": "admin",
+        "child_id": "user"
     },
+
     {
-        "id": "2",
-        "except": true,
-
-        "permissions": "wr",
-        "parent_type": "",
-        "parent": "",
-
-        "child_type": "roles",
-        "child": "root"
-    },
-    {
-        "id": "2",
-
-        "permissions": "wr",
-        "parent_type": "roles",
-        "parent": "root",
-
-        "child_type": "*",
-        "child": "*"
+        "id": 2,
+        "level": "except",
+        "level": "rw",
+        "parent_id": "root",
+        "child_id": "root"
     }
 ]
