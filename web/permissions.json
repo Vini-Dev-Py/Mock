@@ -1,0 +1,33 @@
+[
+    {
+        "id": "1",
+
+        "permissions": "wr",
+        "parent_type": "roles",
+        "parent": "admin",
+
+        "child_type": "roles",
+        "child": "user"
+    },
+    {
+        "id": "2",
+        "except": true,
+
+        "permissions": "wr",
+        "parent_type": "",
+        "parent": "",
+
+        "child_type": "roles",
+        "child": "root"
+    },
+    {
+        "id": "2",
+
+        "permissions": "wr",
+        "parent_type": "roles",
+        "parent": "root",
+
+        "child_type": "*",
+        "child": "*"
+    }
+]
